@@ -1,0 +1,40 @@
+<body>
+    <h3>View Posts</h3>
+    <h4>View what others have posted!</h4>
+    {{log this}}
+    <main class = "post-container">
+        <div class = "post-info">
+            <h2 class = "post-title"> {{currentPost.title}}</h2>
+            <p class="post-description">
+             {{currentPost.description}}
+            </p>
+
+            <div class = "post-author-date">
+                <p class = "author"> {{currentPost.username}}</p>
+                <p class = "date-posted"> {{currentPost.createdAt}}</p>
+            </div>
+        </div>
+        <img class = "img-container" src="{{currentPost.image}}" />
+        <div class="comment-section">
+        <div class = "comment-box">
+            <textarea id="comment-text" class ="comment-box-text"></textarea>
+            <i id="comment-text" class="fa fa-comment comment-box-button"
+                aria-hiddden="true"></i>
+        </div>
+        <div class ="comments">
+            
+        </div>
+        </div>
+
+    </main>
+
+
+<section id="poster">
+            <p>Steve123</p>
+        </section>
+    <section id="time">
+        <p>Date posted: September 21, 2022 at 4:00 PM</p>
+    </section>
+    
+</body>
+</html>

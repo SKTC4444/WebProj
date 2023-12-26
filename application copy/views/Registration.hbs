@@ -1,0 +1,40 @@
+<body>
+    <h3>Registration</h3>
+    <h4>Please fill out all the necssary fields to get your SocialShare account started!</h4>
+
+        <form id="reg-form" class="input-form"
+        method="POST"
+        action= "/users/registration"
+        enctype="application/x-www-form-urlencoded">
+        <label for="username">Username:</label><input type="text" name="username" 
+                id = "username" required ><br>
+        <label for="email">Email:</label><input type="email" name="email" 
+                id = "email" required ><br>
+        <label for="password">Password:</label><input type="password" name="password" 
+                id = "password" required ><br>
+        <label for="Repassword">Re-enter password:</label><input type="password" name="Repassword" 
+                id = "Repassword" required ><br>
+        <p><label for="ageOptions">Are you 13+ years of age?</label></p>
+        <div id="wrapper">
+        <p><input type="radio" name="options" required>Yes</input>
+        <input type="radio" name="options" required>No</input>
+        </p>
+        </div>
+        <br>
+        <a href="/">
+            <p><input type="checkbox" required/> Check this to agree to our TOS and privacy rules</p>
+        </a>
+        <p>
+        </p>
+        <div class="buttons">
+            <input type="submit" value= "Register">
+        </div>
+         <p>    
+        </p>
+    </form>
+    </form>
+</body>
+</html>
+
+
+        
